@@ -1,2 +1,0 @@
-# ChallengeOne
-Encriptación y Desencriptación

@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <style>
+        .tetoabajo{
+font-family: 'Roboto', sans-serif;
+width: 205px;
+height: 18px;
+
+font-style: normal;
+font-weight: 400;
+font-size: 12px;
+line-height: 150%;
+/* identical to box height, or 18px */
+
+
+/* Gray/gray-400 */
+
+color: #495057;
+
+opacity: 0.8;
+
+/* Inside auto layout */
+
+flex: none;
+order: 1;
+flex-grow: 0;
+        }
+        .texto{
+resize: none;
+font-family: 'Roboto', sans-serif;
+background: #E5E5E5;
+border: none;
+outline: none;
+position: absolute;
+width: 577px;
+height: 480px;
+left: 240px;
+top: 168px;
+
+
+font-style: normal;
+font-weight: 400;
+font-size: 32px;
+line-height: 150%;
+/* identical to box height, or 48px */
+
+
+/* Dark blue/dark-blue-300 */
+
+color: #0A3871;}
+
+.abajo{
+display: flex;
+flex-direction: row;
+align-items: center;
+padding: 0px;
+gap: 8px;
+
+position: absolute;
+width: 229px;
+height: 18px;
+left: 240px;
+top: 851px;
+}
+.signo{
+width: 16px;
+height: 16px;
+
+
+/* Inside auto layout */
+
+flex: none;
+order: 0;
+flex-grow: 0;
+}
+        .adentro{/* Frame 5 */
+resize: none;
+font-family: 'Roboto', sans-serif;
+width: 336px;
+height: 48px;
+
+
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 150%;
+/* or 24px */
+
+text-align: center;
+
+/* Gray/gray-400 */
+
+color: #495057;
+
+
+/* Inside auto layout */
+
+flex: none;
+order: 1;
+align-self: stretch;
+flex-grow: 0;
+border: none;
+outline: none;
+        }
+
+        .adentro2{
+
+font-family: 'Roboto', sans-serif;    
+width: 336px;
+height: 58px;
+
+font-style: normal;
+font-weight: 700;
+font-size: 24px;
+line-height: 120%;
+/* or 29px */
+
+text-align: center;
+
+/* Gray/gray-500 */
+
+color: #343A40;
+
+
+/* Inside auto layout */
+
+flex: none;
+order: 0;
+align-self: stretch;
+flex-grow: 0;
+        }
+
+        .frame5{
+            display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 0px;
+gap: 16px;
+
+position: absolute;
+width: 336px;
+height: 122px;
+left: 1032px;
+top: 619px;
+
+        }
+
+        .muneco{
+position: absolute;
+width: 336px;
+height: 304px;
+left: 1032px;
+top: 283px;}
+        .logo{display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 0px;
+gap: 40px;
+
+position: absolute;
+width: 120px;
+height: 48px;
+left: 40px;
+top: 40px;}
+        .rectangle{/* Rectangle 1 */
+
+
+position: absolute;
+width: 400px;
+height: 944px;
+left: 1000px;
+top: 40px;
+
+/* White */
+
+background: #FFFFFF;
+/* shadow */
+
+box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);
+border-radius: 32px;}
+        .botones{
+            display: flex;
+flex-direction: row;
+align-items: flex-start;
+padding: 0px;
+gap: 24px;
+
+position: absolute;
+width: 680px;
+height: 67px;
+left: 240px;
+top: 885px;
+        }
+        .button {
+background: rgba(10, 56, 113, 1);
+display: flex;
+flex-direction: row;
+align-items: flex-start;
+padding: 24px;
+gap: 8px;
+
+width: 328px;
+height: 67px;
+
+/* Dark blue/dark-blue-300 */
+
+background: #0A3871;
+border-radius: 24px;
+
+/* Inside auto layout */
+
+flex: none;
+order: 0;
+flex-grow: 0;
+}
+
+.button2{
+    /* Button */
+
+
+box-sizing: border-box;
+
+/* Auto layout */
+
+display: flex;
+flex-direction: row;
+align-items: flex-start;
+padding: 24px;
+gap: 8px;
+
+width: 328px;
+height: 67px;
+
+/* Light gray */
+
+background: #D8DFE8;
+/* Dark blue/dark-blue-300 */
+
+border: 1px solid #0A3871;
+border-radius: 24px;
+
+/* Inside auto layout */
+
+flex: none;
+order: 1;
+flex-grow: 0;
+}
+
+
+    </style>
+    <title>Encriptador</title>
+    <script>
+      function encriptar(mensaje) {
+        let mensajeEncriptado = mensaje;
+        mensajeEncriptado = mensajeEncriptado.replace(/e/g, "enter");
+        mensajeEncriptado = mensajeEncriptado.replace(/i/g, "imes");
+        mensajeEncriptado = mensajeEncriptado.replace(/a/g, "ai");
+        mensajeEncriptado = mensajeEncriptado.replace(/o/g, "ober");
+        mensajeEncriptado = mensajeEncriptado.replace(/u/g, "ufat");
+        return mensajeEncriptado;
+      }
+
+      function desencriptar(mensajeEncriptado) {
+        let mensaje = mensajeEncriptado;
+        mensaje = mensaje.replace(/enter/g, "e");
+        mensaje = mensaje.replace(/imes/g, "i");
+        mensaje = mensaje.replace(/ai/g, "a");
+        mensaje = mensaje.replace(/ober/g, "o");
+        mensaje = mensaje.replace(/ufat/g, "u");
+        return mensaje;
+      }
+      
+      function encriptarMensaje() {
+        let mensaje = document.getElementById("mensaje").value;
+        let mensajeEncriptado = encriptar(mensaje);
+        document.getElementById("mensajeEncriptado").value = mensajeEncriptado;
+        var mensajeNoEncontrado = document.getElementById("ningun");
+        mensajeNoEncontrado.style.display = "none";
+      }
+
+      function desencriptarMensaje() {
+        let mensajeEncriptado = document.getElementById("mensaje").value;
+        let mensaje = desencriptar(mensajeEncriptado);
+        document.getElementById("mensajeEncriptado").value = mensaje;
+        var mensajeNoEncontrado = document.getElementById("ningun");
+        mensajeNoEncontrado.style.display = "none";
+      }
+    </script>
+  </head>
+  <body style="background: #E5E5E5;">
+    <img src="Logo.png" class="Logo" alt="Descripción de la imagen">
+    
+      <div class="botones">
+      <input type="button" class="button"  value="Encriptar" onclick="encriptarMensaje()">
+      <input type="button" class = "button2" value="Desencriptar" onclick="desencriptarMensaje()"><br><br>
+    </div>
+    <section class="rectangle">
+       
+    </section>
+    <textarea id="mensaje" class="texto" name="mensaje"  placeholder="Ingresa el texto aca" ></textarea><br><br>
+    <img src="Muneco.png" class="muneco" alt="Descripción de la imagen">
+    
+    <div class="frame5">
+    <h1 class="adentro2" id="ningun">Ningun mensaje fue encontrado</h1>
+    <textarea id="mensajeEncriptado" class="adentro" name="mensajeEncriptado" placeholder="Aun no hay texto ingresado"></textarea>
+    </div>
+    <div class="abajo">
+        <h1 class="tetoabajo">Solo letras minusculas y sin acentos</h1>
+    <img src="signo.png" class="signo" alt="Descripción de la imagen">
+    </div>
+
+  </body>
+</html>
